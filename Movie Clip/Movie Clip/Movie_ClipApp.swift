@@ -11,7 +11,7 @@ import SwiftUI
 struct Movie_ClipApp: App {
     var body: some Scene {
         WindowGroup {
-            MainScreen()
+            MainScreen(selectedView: 0)
         }
     }
 }

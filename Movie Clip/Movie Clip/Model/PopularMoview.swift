@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - PopularMovie
 struct PopularMovie: Codable {
-    let commentHeader: [String]
-    let divider: String
+    let commentHeader: [String]?
+    let divider: String?
     let items: [PopularMovieItem]
 
     enum CodingKeys: String, CodingKey {
@@ -21,21 +21,21 @@ struct PopularMovie: Codable {
 
 // MARK: - Item
 struct PopularMovieItem: Codable {
-    let category: String
+    let category: String?
     let thumbnails: [PopularMovieThumbnail]
 }
 
 // MARK: - Thumbnail
 struct PopularMovieThumbnail: Codable {
-    let title, id: String
-    let url: String
-    let poster, largePoster, xlargePoster, poster2X: String
-    let largePoster2X, xlargePoster2X: String
-    let exclusive, hd: Bool
-    let itunesurl, showtimesurl: String
-    let genre1: Genre1
-    let genre2: String
-    let genre3: Genre3
+    let title, id: String?
+    let url: String?
+    let poster, largePoster, xlargePoster, poster2X: String?
+    let largePoster2X, xlargePoster2X: String?
+    let exclusive, hd: Bool?
+    let itunesurl, showtimesurl: String?
+    let genre1: Genre1?
+    let genre2: String?
+    let genre3: Genre3?
     let rtRating: String?
 
     enum CodingKeys: String, CodingKey {

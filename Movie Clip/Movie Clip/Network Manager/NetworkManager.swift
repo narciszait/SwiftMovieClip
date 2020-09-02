@@ -13,12 +13,12 @@ enum NetworkError: Error {
     case decodingError
 }
 
-let baseURL = "http://trailers.apple.com/trailers/"
-let newestMoviesURL = "https://trailers.apple.com/trailers/home/feeds/just_added.json"
-let thisWeek = "http://trailers.apple.com/trailers/home/feeds/opening.json"
-let movieInfo = "feeds/data/" //add .json at the end
-
 class NetworkManager {
+    let baseURL = "http://trailers.apple.com/"
+    let newestMoviesURL = "https://trailers.apple.com/trailers/home/feeds/just_added.json"
+    let popularMoviesURL = "https://trailers.apple.com/trailers/home/feeds/popular/most_pop.json"
+    let movieInfo = "/trailer/feeds/data/" //add .json at the end
+    
     func getNewestMoviews(completion: @escaping (Result<[NewestMovie], NetworkError>) -> Void) {
         guard let url = URL(string: newestMoviesURL) else {
             completion(.failure(.invalidURL))
@@ -42,8 +42,8 @@ class NetworkManager {
         }.resume()
     }
     
-    func getThisWeekMovie(completion: @escaping (Result<[Movie], NetworkError>) -> Void) {
-        guard let url = URL(string: thisWeek) else {
+    func getPopularMovies(completion: @escaping (Result<[PopularMovieThumbnail], NetworkError>) -> Void) {
+        guard let url = URL(string: popularMoviesURL) else {
             completion(.failure(.invalidURL))
             return
         }
@@ -60,8 +60,14 @@ class NetworkManager {
                 
             print(String(data: data, encoding: .utf8)!)
             
-            let movies = try? JSONDecoder().decode([Movie].self, from: data)
-            movies == nil ? completion(.failure(.decodingError)) : completion(.success(movies!))
+            let popularMovies = try? JSONDecoder().decode(PopularMovie.self, from: data)
+            var movies = [PopularMovieThumbnail]();
+            if let popularMovies = popularMovies {
+                for popular in popularMovies.items {
+                    movies.append(contentsOf: popular.thumbnails)
+                }
+            }
+            popularMovies == nil ? completion(.failure(.decodingError)) : completion(.success(movies))
         }.resume()
     }
     

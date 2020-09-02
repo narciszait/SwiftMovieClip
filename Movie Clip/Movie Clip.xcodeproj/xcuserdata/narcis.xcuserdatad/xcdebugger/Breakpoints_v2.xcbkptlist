@@ -16,5 +16,161 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32D34EC3-5A97-42E2-93E3-4790E7FB01FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Clip/Network Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getPopularMovies(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Clip/Views/Newest Movies/NewestMovieDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "NewestMovieDetailView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973 - 49a1f404c8e2054a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Movie_Clip.NewestMovieDetailView.isLinkActive : Swift.Bool"
+                  moduleName = "Movie Clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/SwiftMovieClip/Movie%20Clip/Movie%20Clip/Views/Newest%20Movies/NewestMovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973 - 33d5cbb1b043fd36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Clip.NewestMovieDetailView.isLinkActive.getter : Swift.Bool"
+                  moduleName = "Movie Clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/SwiftMovieClip/Movie%20Clip/Movie%20Clip/Views/Newest%20Movies/NewestMovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973 - a82339e4eec976d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Clip.NewestMovieDetailView.isLinkActive.setter : Swift.Bool"
+                  moduleName = "Movie Clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/SwiftMovieClip/Movie%20Clip/Movie%20Clip/Views/Newest%20Movies/NewestMovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973 - cb8aa89a916071f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Clip.NewestMovieDetailView.isLinkActive.modify : Swift.Bool"
+                  moduleName = "Movie Clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/SwiftMovieClip/Movie%20Clip/Movie%20Clip/Views/Newest%20Movies/NewestMovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973 - 7cb180a292a5d3a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Clip.NewestMovieDetailView.isLinkActive.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Movie Clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/SwiftMovieClip/Movie%20Clip/Movie%20Clip/Views/Newest%20Movies/NewestMovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "4AFAE636-EADD-421B-9CA3-4E9269A5A973 - c8321d2a138aaf22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Clip.NewestMovieDetailView.$isLinkActive.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Movie Clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narcis/git/Narcis/SwiftMovieClip/Movie%20Clip/Movie%20Clip/Views/Newest%20Movies/NewestMovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "143">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0851FBDF-8507-47B2-AB60-312D6585FC41"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Clip/ViewModel/Newest Movies/NewestMovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "trailerURL"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9FD26E4-F736-42F1-B2AC-D38378583126"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Clip/Views/Popular Movies/PopularMovieDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

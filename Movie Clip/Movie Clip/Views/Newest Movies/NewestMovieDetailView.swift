@@ -7,9 +7,11 @@
 
 import SwiftUI
 import KingfisherSwiftUI
+import AVKit
 
 struct NewestMovieDetailView: View {
     var movie: NewestMovieViewModel
+    @State var isLinkActive = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,12 +22,22 @@ struct NewestMovieDetailView: View {
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(20)
                 } else {
-                    KFImage(URL(string: movie.poster)!)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(20)
+                    NavigationLink(destination: VideoPlayer(player: AVPlayer(url:  URL(string: NetworkManager().baseURL+(movie.movie.trailers?.first?.url ?? ""))!)), isActive: $isLinkActive) {
+                        Button(action: {
+                            self.isLinkActive = true
+                        }) {
+                            ZStack(alignment: .center) {
+                                KFImage(URL(string: movie.poster)!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .cornerRadius(20)
+                                Image(systemName: "play.circle")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                            }
+                        }
+                    }.navigationBarTitle("", displayMode: .inline)
                 }
-                
                 
                 Text(movie.title)
                     .font(.title)
@@ -40,7 +52,7 @@ struct NewestMovieDetailView: View {
                         .font(.subheadline)
                 }
             }
-        }
+        }.navigationBarTitle(movie.title, displayMode: .automatic)
     }
 }
 

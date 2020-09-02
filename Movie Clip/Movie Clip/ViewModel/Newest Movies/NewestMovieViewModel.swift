@@ -9,7 +9,6 @@
 import Foundation
 
 //this is used in the app to show the list of new trailers/movies
-//this could be in the same file as MovieListViewModel
 struct NewestMovieViewModel {
     let movie: NewestMovie
     
@@ -23,6 +22,10 @@ struct NewestMovieViewModel {
     
     var poster: String {
         return self.movie.poster2X ?? self.movie.poster ?? "No url"
+    }
+    
+    var trailerURL: String {
+        return NetworkManager().baseURL + (self.movie.trailers?.first?.url ?? "No trailer URL")
     }
     
     var releaseDate: String {
