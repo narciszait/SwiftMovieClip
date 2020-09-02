@@ -29,7 +29,7 @@ struct NewestMovieViewModel {
         return self.movie.releasedate ?? "No release date"
     }
     
-    var trailerURL: String {
-        return self.movie.trailers?.first?.url ?? "No trailer URL"
+    var actors: [String] {
+        return self.movie.actors ?? ["No actors"];
     }
 }

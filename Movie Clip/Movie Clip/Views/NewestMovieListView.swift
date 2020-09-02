@@ -11,30 +11,28 @@ import Combine
 import KingfisherSwiftUI
 
 struct NewestMovieListView: View {
-    @ObservedObject var ​movieListVM = NewestMovieListViewModel()
+    @ObservedObject var newestMovieListVM = NewestMovieListViewModel()
     
     init() {
-        self.​movieListVM.fetchAllNewMovies()
+        self.newestMovieListVM.fetchAllNewMovies()
     }
     
     var body: some View {
         NavigationView {
-            List(​movieListVM.movies, id:\.title) { movie in
+            List(newestMovieListVM.movies, id:\.title) { movie in
                 NavigationLink(
-                    destination: MovieListViewCell(movie: movie),
+                    destination: NewestMovieDetailView(movie: movie),
                     label: {
                         Text(movie.title)
                             .font(.headline)
                     })
             }
-            .onAppear {
-                print(self.​movieListVM.movies.count)
-            }.navigationBarTitle("New Movies", displayMode: .automatic)
+            .navigationBarTitle("New Movies", displayMode: .automatic)
         }
     }
 }
 
-struct MovieListView_Previews: PreviewProvider {
+struct NewestMovieListView_Previews: PreviewProvider {
     static var previews: some View {
         NewestMovieListView()
     }
