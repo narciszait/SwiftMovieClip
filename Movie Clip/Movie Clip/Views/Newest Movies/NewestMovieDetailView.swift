@@ -26,7 +26,6 @@ struct NewestMovieDetailView: View {
                         .cornerRadius(20)
                 }
                 
-                Spacer()
                 
                 Text(movie.title)
                     .font(.title)

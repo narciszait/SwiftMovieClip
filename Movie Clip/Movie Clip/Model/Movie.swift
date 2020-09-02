@@ -9,39 +9,32 @@ import Foundation
 
 // MARK: - ThisWeekMovie
 struct Movie: Codable {
-    let commentHeader: [String]
-    let divider: String
-    let items: [Item]
+    let page: Page
+    let details: Details
+}
+
+// MARK: - Details
+struct Details: Codable {
+    let locale: Locale
+}
+
+// MARK: - Locale
+struct Locale: Codable {
+    let en: En
+}
+
+// MARK: - En
+struct En: Codable {
+    let synopsis: String
+}
+
+// MARK: - Page
+struct Page: Codable {
+    let movieTitle, trailerURL, releaseCopy: String
 
     enum CodingKeys: String, CodingKey {
-        case commentHeader = "_commentHeader"
-        case divider, items
+        case movieTitle = "movie_title"
+        case trailerURL = "trailer_url"
+        case releaseCopy = "release_copy"
     }
 }
-
-// MARK: - Item
-struct Item: Codable {
-    let category: String
-    let thumbnails: [Thumbnail]
-}
-
-// MARK: - Thumbnail
-struct Thumbnail: Codable {
-    let title, id: String
-    let hd, exclusive: Bool
-    let url, showtimesurl: String
-    let poster, largePoster, xlargePoster: String
-    let poster2X, largePoster2X, xlargePoster2X, itunesurl: String
-    let genre1, genre2, genre3: String
-
-    enum CodingKeys: String, CodingKey {
-        case title, id, hd, exclusive, url, showtimesurl, poster
-        case largePoster = "large_poster"
-        case xlargePoster = "xlarge_poster"
-        case poster2X = "poster_2x"
-        case largePoster2X = "large_poster_2x"
-        case xlargePoster2X = "xlarge_poster_2x"
-        case itunesurl, genre1, genre2, genre3
-    }
-}
-
