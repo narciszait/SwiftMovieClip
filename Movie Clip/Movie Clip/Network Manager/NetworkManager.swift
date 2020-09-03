@@ -57,8 +57,6 @@ class NetworkManager {
                 completion(.failure(.unknownError))
                 return
             }
-                
-            print(String(data: data, encoding: .utf8)!)
             
             let popularMovies = try? JSONDecoder().decode(PopularMovie.self, from: data)
             var movies = [PopularMovieThumbnail]();
@@ -71,8 +69,8 @@ class NetworkManager {
         }.resume()
     }
     
-//    func getThisWeekMovie(movieId: String, completion: @escaping (Result<[Movie], NetworkError>) -> Void) {
-//        guard let url = URL(string: "\(baseURL)\(movieInfo).json") else {
+//    func getAMovie(movieId: String, completion: @escaping (Result<Movie, NetworkError>) -> Void) {
+//        guard let url = URL(string: baseURL+movieId+".json") else {
 //            completion(.failure(.invalidURL))
 //            return
 //        }
@@ -86,20 +84,10 @@ class NetworkManager {
 //                completion(.failure(.unknownError))
 //                return
 //            }
-//                
-//            print(String(data: data, encoding: .utf8)!)
 //            
-//            let movies = try? JSONDecoder().decode([Movie].self, from: data)
-//            movies == nil ? completion(.failure(.decodingError)) : completion(.success(movies!))
+//            let movie = try? JSONDecoder().decode(Movie.self, from: data)
+//            movie == nil ? completion(.failure(.decodingError)) : completion(.success(movie!))
 //        }.resume()
 //    }
-    
-//    func getMovieTrailer(trailerString: String) {
-//        let movieTrailerURL = baseURL + trailerString
-//        guard let url = URL(string: movieTrailerURL) else {
-//            return
-//        }
-//
-//
-//    }
+
 }

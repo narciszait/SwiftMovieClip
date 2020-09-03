@@ -22,7 +22,7 @@ struct NewestMovieDetailView: View {
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(20)
                 } else {
-                    NavigationLink(destination: VideoPlayer(player: AVPlayer(url:  URL(string: NetworkManager().baseURL+(movie.movie.trailers?.first?.url ?? ""))!)), isActive: $isLinkActive) {
+                    NavigationLink(destination: VideoPlayer(player: AVPlayer(url:  URL(string: "https://bit.ly/swswift")!)), isActive: $isLinkActive) {
                         Button(action: {
                             self.isLinkActive = true
                         }) {

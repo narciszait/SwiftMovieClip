@@ -19,6 +19,23 @@
 		EC2F300725003D5F00B7C1F0 /* PopularMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F300625003D5F00B7C1F0 /* PopularMovieListViewModel.swift */; };
 		EC2F30092500412B00B7C1F0 /* PopularMovieListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F30082500412B00B7C1F0 /* PopularMovieListVIew.swift */; };
 		EC2F300B2500419200B7C1F0 /* PopularMovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F300A2500419200B7C1F0 /* PopularMovieDetailView.swift */; };
+		EC58C4F52500D7AC006D65AC /* Movie_Clip_ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58C4F42500D7AC006D65AC /* Movie_Clip_ClipApp.swift */; };
+		EC58C4F72500D7AC006D65AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58C4F62500D7AC006D65AC /* ContentView.swift */; };
+		EC58C4F92500D7AC006D65AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC58C4F82500D7AC006D65AC /* Assets.xcassets */; };
+		EC58C4FC2500D7AC006D65AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC58C4FB2500D7AC006D65AC /* Preview Assets.xcassets */; };
+		EC58C5012500D7AC006D65AC /* Movie Clip Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = EC58C4F22500D7AC006D65AC /* Movie Clip Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC58C5062500D8FD006D65AC /* PopularMovieListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F30082500412B00B7C1F0 /* PopularMovieListVIew.swift */; };
+		EC58C5072500D902006D65AC /* PopularMovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F300A2500419200B7C1F0 /* PopularMovieDetailView.swift */; };
+		EC58C5082500D905006D65AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FEF250014C400B7C1F0 /* NetworkManager.swift */; };
+		EC58C5092500D909006D65AC /* PopularMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F300425003BA000B7C1F0 /* PopularMovieViewModel.swift */; };
+		EC58C50A2500D90B006D65AC /* PopularMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F300625003D5F00B7C1F0 /* PopularMovieListViewModel.swift */; };
+		EC58C50B2500D90F006D65AC /* PopularMoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FFE2500395800B7C1F0 /* PopularMoview.swift */; };
+		EC58C50F2500DA6B006D65AC /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EC58C50E2500DA6B006D65AC /* KingfisherSwiftUI */; };
+		EC58C5102500DACA006D65AC /* NewestMovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FF82500152C00B7C1F0 /* NewestMovieListView.swift */; };
+		EC58C5112500DACF006D65AC /* NewestMovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FFA25001ECF00B7C1F0 /* NewestMovieDetailView.swift */; };
+		EC58C5122500DAD2006D65AC /* NewestMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FF1250014F100B7C1F0 /* NewestMovie.swift */; };
+		EC58C5132500DAEB006D65AC /* NewestMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FF42500151D00B7C1F0 /* NewestMovieViewModel.swift */; };
+		EC58C5142500DAEE006D65AC /* NewestMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F2FF62500152300B7C1F0 /* NewestMovieListViewModel.swift */; };
 		EC92999425000BBE00377CD0 /* Movie_ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92999325000BBE00377CD0 /* Movie_ClipApp.swift */; };
 		EC92999625000BBE00377CD0 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92999525000BBE00377CD0 /* MainScreen.swift */; };
 		EC92999825000BBF00377CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC92999725000BBF00377CD0 /* Assets.xcassets */; };
@@ -26,7 +43,28 @@
 		EC9299A425000C6800377CD0 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EC9299A325000C6800377CD0 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC58C4FF2500D7AC006D65AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC92998825000BBE00377CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC58C4F12500D7AC006D65AC;
+			remoteInfo = "Movie Clip Clip";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		EC58C5052500D7AC006D65AC /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				EC58C5012500D7AC006D65AC /* Movie Clip Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC9299A825000C6800377CD0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +90,13 @@
 		EC2F300625003D5F00B7C1F0 /* PopularMovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewModel.swift; sourceTree = "<group>"; };
 		EC2F30082500412B00B7C1F0 /* PopularMovieListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListVIew.swift; sourceTree = "<group>"; };
 		EC2F300A2500419200B7C1F0 /* PopularMovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieDetailView.swift; sourceTree = "<group>"; };
+		EC58C4F22500D7AC006D65AC /* Movie Clip Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Clip Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC58C4F42500D7AC006D65AC /* Movie_Clip_ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_Clip_ClipApp.swift; sourceTree = "<group>"; };
+		EC58C4F62500D7AC006D65AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC58C4F82500D7AC006D65AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC58C4FB2500D7AC006D65AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC58C4FD2500D7AC006D65AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC58C4FE2500D7AC006D65AC /* Movie_Clip_Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movie_Clip_Clip.entitlements; sourceTree = "<group>"; };
 		EC92999025000BBE00377CD0 /* Movie Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC92999325000BBE00377CD0 /* Movie_ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_ClipApp.swift; sourceTree = "<group>"; };
 		EC92999525000BBE00377CD0 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -61,6 +106,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC58C4EF2500D7AC006D65AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC58C50F2500DA6B006D65AC /* KingfisherSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC92998D25000BBE00377CD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,11 +197,41 @@
 			path = "Popular Movies";
 			sourceTree = "<group>";
 		};
+		EC58C4F32500D7AC006D65AC /* Movie Clip Clip */ = {
+			isa = PBXGroup;
+			children = (
+				EC58C4F42500D7AC006D65AC /* Movie_Clip_ClipApp.swift */,
+				EC58C4F62500D7AC006D65AC /* ContentView.swift */,
+				EC58C4F82500D7AC006D65AC /* Assets.xcassets */,
+				EC58C4FD2500D7AC006D65AC /* Info.plist */,
+				EC58C4FE2500D7AC006D65AC /* Movie_Clip_Clip.entitlements */,
+				EC58C4FA2500D7AC006D65AC /* Preview Content */,
+			);
+			path = "Movie Clip Clip";
+			sourceTree = "<group>";
+		};
+		EC58C4FA2500D7AC006D65AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC58C4FB2500D7AC006D65AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC58C50D2500DA6B006D65AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC92998725000BBE00377CD0 = {
 			isa = PBXGroup;
 			children = (
 				EC92999225000BBE00377CD0 /* Movie Clip */,
+				EC58C4F32500D7AC006D65AC /* Movie Clip Clip */,
 				EC92999125000BBE00377CD0 /* Products */,
+				EC58C50D2500DA6B006D65AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				EC92999025000BBE00377CD0 /* Movie Clip.app */,
+				EC58C4F22500D7AC006D65AC /* Movie Clip Clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +271,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EC58C4F12500D7AC006D65AC /* Movie Clip Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC58C5022500D7AC006D65AC /* Build configuration list for PBXNativeTarget "Movie Clip Clip" */;
+			buildPhases = (
+				EC58C4EE2500D7AC006D65AC /* Sources */,
+				EC58C4EF2500D7AC006D65AC /* Frameworks */,
+				EC58C4F02500D7AC006D65AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Movie Clip Clip";
+			packageProductDependencies = (
+				EC58C50E2500DA6B006D65AC /* KingfisherSwiftUI */,
+			);
+			productName = "Movie Clip Clip";
+			productReference = EC58C4F22500D7AC006D65AC /* Movie Clip Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		EC92998F25000BBE00377CD0 /* Movie Clip */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC92999F25000BC000377CD0 /* Build configuration list for PBXNativeTarget "Movie Clip" */;
@@ -195,10 +299,12 @@
 				EC92998D25000BBE00377CD0 /* Frameworks */,
 				EC92998E25000BBE00377CD0 /* Resources */,
 				EC9299A825000C6800377CD0 /* Embed Frameworks */,
+				EC58C5052500D7AC006D65AC /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC58C5002500D7AC006D65AC /* PBXTargetDependency */,
 			);
 			name = "Movie Clip";
 			packageProductDependencies = (
@@ -217,6 +323,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					EC58C4F12500D7AC006D65AC = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					EC92998F25000BBE00377CD0 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -239,11 +348,21 @@
 			projectRoot = "";
 			targets = (
 				EC92998F25000BBE00377CD0 /* Movie Clip */,
+				EC58C4F12500D7AC006D65AC /* Movie Clip Clip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC58C4F02500D7AC006D65AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC58C4FC2500D7AC006D65AC /* Preview Assets.xcassets in Resources */,
+				EC58C4F92500D7AC006D65AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC92998E25000BBE00377CD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +375,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC58C4EE2500D7AC006D65AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC58C5112500DACF006D65AC /* NewestMovieDetailView.swift in Sources */,
+				EC58C50B2500D90F006D65AC /* PopularMoview.swift in Sources */,
+				EC58C5122500DAD2006D65AC /* NewestMovie.swift in Sources */,
+				EC58C5142500DAEE006D65AC /* NewestMovieListViewModel.swift in Sources */,
+				EC58C50A2500D90B006D65AC /* PopularMovieListViewModel.swift in Sources */,
+				EC58C5072500D902006D65AC /* PopularMovieDetailView.swift in Sources */,
+				EC58C4F72500D7AC006D65AC /* ContentView.swift in Sources */,
+				EC58C5082500D905006D65AC /* NetworkManager.swift in Sources */,
+				EC58C5092500D909006D65AC /* PopularMovieViewModel.swift in Sources */,
+				EC58C4F52500D7AC006D65AC /* Movie_Clip_ClipApp.swift in Sources */,
+				EC58C5062500D8FD006D65AC /* PopularMovieListVIew.swift in Sources */,
+				EC58C5102500DACA006D65AC /* NewestMovieListView.swift in Sources */,
+				EC58C5132500DAEB006D65AC /* NewestMovieViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC92998C25000BBE00377CD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,7 +418,61 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EC58C5002500D7AC006D65AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC58C4F12500D7AC006D65AC /* Movie Clip Clip */;
+			targetProxy = EC58C4FF2500D7AC006D65AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		EC58C5032500D7AC006D65AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Movie Clip Clip/Movie_Clip_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Movie Clip Clip/Preview Content\"";
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Movie Clip Clip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Narcis-Zait.Movie-Clip.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EC58C5042500D7AC006D65AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Movie Clip Clip/Movie_Clip_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Movie Clip Clip/Preview Content\"";
+				DEVELOPMENT_TEAM = C5N5BYSRY5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Movie Clip Clip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Narcis-Zait.Movie-Clip.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		EC92999D25000BC000377CD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +592,7 @@
 		EC9299A025000BC000377CD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,6 +615,7 @@
 		EC9299A125000BC000377CD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +638,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC58C5022500D7AC006D65AC /* Build configuration list for PBXNativeTarget "Movie Clip Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC58C5032500D7AC006D65AC /* Debug */,
+				EC58C5042500D7AC006D65AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EC92998B25000BBE00377CD0 /* Build configuration list for PBXProject "Movie Clip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -475,6 +679,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EC58C50E2500DA6B006D65AC /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9299A225000C6800377CD0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
 		EC9299A325000C6800377CD0 /* KingfisherSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EC9299A225000C6800377CD0 /* XCRemoteSwiftPackageReference "Kingfisher" */;

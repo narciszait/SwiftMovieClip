@@ -26,7 +26,7 @@ struct MainScreen: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen(selectedView: 0)
     }

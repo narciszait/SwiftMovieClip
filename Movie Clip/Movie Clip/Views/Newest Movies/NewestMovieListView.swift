@@ -37,17 +37,3 @@ struct NewestMovieListView_Previews: PreviewProvider {
         NewestMovieListView()
     }
 }
-
-//HStack {
-//    KFImage(URL(string: movie.poster)!)
-//    .resizable()
-//    .scaledToFit()
-//    .clipShape(RoundedRectangle(cornerRadius: 20))
-//    .frame(width: 80, height: 80)
-//
-//
-//    VStack(alignment: .leading) {
-//        Text(movie.title)
-//            .minimumScaleFactor(0.5)
-//    }
-//}

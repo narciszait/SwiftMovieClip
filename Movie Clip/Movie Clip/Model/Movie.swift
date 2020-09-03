@@ -9,18 +9,18 @@ import Foundation
 
 // MARK: - ThisWeekMovie
 struct Movie: Codable {
-    let page: Page
-    let details: Details
+    let page: Page?
+    let details: Details?
 }
 
 // MARK: - Details
 struct Details: Codable {
-    let locale: Locale
+    let locale: Locale?
 }
 
 // MARK: - Locale
 struct Locale: Codable {
-    let en: En
+    let en: En?
 }
 
 // MARK: - En
@@ -30,7 +30,7 @@ struct En: Codable {
 
 // MARK: - Page
 struct Page: Codable {
-    let movieTitle, trailerURL, releaseCopy: String
+    let movieTitle, trailerURL, releaseCopy: String?
 
     enum CodingKeys: String, CodingKey {
         case movieTitle = "movie_title"
