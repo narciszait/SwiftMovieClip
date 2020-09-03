@@ -53,7 +53,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCAppClipURL"
-            value = "http://narcis.me/?parameter=0"
+            value = "http://narcis.me/?parameter=1"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

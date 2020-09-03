@@ -41,6 +41,7 @@
 		EC92999825000BBF00377CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC92999725000BBF00377CD0 /* Assets.xcassets */; };
 		EC92999B25000BBF00377CD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC92999A25000BBF00377CD0 /* Preview Assets.xcassets */; };
 		EC9299A425000C6800377CD0 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EC9299A325000C6800377CD0 /* KingfisherSwiftUI */; };
+		ECB8F10F2500EB4F00214963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC92999725000BBF00377CD0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		EC92999725000BBF00377CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC92999A25000BBF00377CD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC92999C25000BC000377CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB8F10E2500E77B00214963 /* Movie Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Movie Clip.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 		EC92999225000BBE00377CD0 /* Movie Clip */ = {
 			isa = PBXGroup;
 			children = (
+				ECB8F10E2500E77B00214963 /* Movie Clip.entitlements */,
 				EC2F2FF32500150600B7C1F0 /* Views */,
 				EC2F2FEE250014B300B7C1F0 /* Network Manager */,
 				EC2F2FED2500149A00B7C1F0 /* ViewModel */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC58C4FC2500D7AC006D65AC /* Preview Assets.xcassets in Resources */,
+				ECB8F10F2500EB4F00214963 /* Assets.xcassets in Resources */,
 				EC58C4F92500D7AC006D65AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +599,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Movie Clip/Movie Clip.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Movie Clip/Preview Content\"";
 				DEVELOPMENT_TEAM = C5N5BYSRY5;
@@ -618,6 +623,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Movie Clip/Movie Clip.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Movie Clip/Preview Content\"";
 				DEVELOPMENT_TEAM = C5N5BYSRY5;
